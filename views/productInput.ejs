@@ -1,0 +1,30 @@
+<%- include('partials/header') -%>
+
+<div class="form-container">
+    <form action="/addProduct" method="post">
+        <!-- <label for="productName">Product Name</label><br> -->
+        <input type="text" name="productName" id="productName" placeholder="Product Name" required><br>
+        <!-- <label for="productImg">Product Image URL</label><br> -->
+        <input type="text" name="productImg" id="productImg" placeholder="Product Image URL" required><br>
+        <!-- <label for="productDesc">Product Description</label><br> -->
+        <textarea type="text" name="productDesc" id="productDesc" placeholder="Product Description" required></textarea><br>
+        <!-- <label for="productPrice">Product Price</label><br> -->
+        <input type="number" name="productPrice" id="productPrice" placeholder="Product Price" required><br>
+        <!-- <label for="productStock">Product Stock</label><br> -->
+        <input type="number" name="productStock" id="productStock" placeholder="Product Stock" required><br>
+        <!-- <label for="productSeller">Product Seller</label><br> -->
+        <input type="text" name="productSeller" id="productSeller" placeholder="Product Seller" required><br>
+        <!-- <label for="categories">Categories</label> -->
+        <select name="categories" id="categories">
+            <option value="Herbs">Herbs</option>
+            <option value="Shrubs">Shrubs</option>
+            <option value="Trees">Trees</option>
+            <option value="Climbers">Climbers</option>
+            <option value="Creepers">Creepers</option>
+        </select><br>
+        <button class="addBtn">+</button>
+    </form>
+</div>
+
+
+<%- include('partials/footer') -%>

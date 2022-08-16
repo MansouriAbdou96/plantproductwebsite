@@ -1,0 +1,264 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    background-color: rgb(236, 234, 234);
+}
+/* navbar styles */
+nav{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #25523B;
+    box-shadow: 1px 0 10px #358856;
+    margin-top: 0;
+    text-align: center;
+    z-index: 3;
+}
+
+ul{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+li{
+    list-style: none;
+    padding-right: 20px;
+    color: #fff;
+}
+
+li a:hover{
+    color: #25523B;
+    border:0;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+li a{
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+}
+/* Card styles */
+h3{
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.seller{
+    font-style: italic;
+    margin: 0;
+}
+
+.price{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 15px;
+}
+
+.stock{
+    border: 0;
+    border-radius: 15px;
+    background-color: rgb(209, 209, 209);
+    color: #29a058;
+    font-weight: 700;
+    margin-top: 0;
+}
+.stock span{
+    color: #29a058;
+    font-size: 12px;
+}
+
+.category{
+    border: 0;
+    border-radius: 20px;
+    padding: 5px;
+    width: auto;
+    background-color: rgb(209, 209, 209);
+    font-size: 12px;
+    color: #29a058;
+    margin: 0;
+    font-weight: 700;
+}
+
+.img-container img{
+    width: 315px;
+}
+
+img{
+    width:150px;
+    height: 200px;
+    object-fit: cover;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 2px 10px 10px 2px #1f4431;
+}
+
+.big-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+.card-container {
+    margin-left: 20px;
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    height: auto;
+    background-color: #25523B;
+    text-align: center;
+    margin-top: 37px;
+    padding: 19px;
+    box-shadow: 2px 10px 10px 2px rgb(224 222 222);
+    border: 0;
+    border-radius: 15px;
+}
+.content {
+    right: 20px;
+    top: 14px;
+    color: #fff;
+    height: auto;
+    text-align: center;
+}
+/* About page */
+.about{
+    text-align: center;
+    margin-top: 50px;
+}
+.about h1{
+    color:#25523B;
+}
+
+/* Product input styles */
+.form-container{
+    display: inline-block;
+    background-color: #25523B;
+    padding: 20px;
+    margin: 10% 35%;
+    position: relative;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 2px 10px 10px 2px rgb(224, 222, 222);
+}
+label{
+    color: #fff;
+    font-weight: bold;
+}
+input, select{
+    margin-bottom: 15px;
+    width: 300px;
+    height: 40px;
+    color: #25523B;
+}
+
+select{
+    width: 308px;
+}
+
+textarea{
+    margin-bottom: 10px;
+    width: 300px;
+    height: 100px;
+}
+
+.addBtn{
+    position: absolute;
+    right: -18px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 60%;
+    background-color: #358856;
+    color:#fff;
+    padding: 5px;
+    box-shadow: 2px 10px 10px 2px rgb(224, 222, 222);
+}
+::placeholder{
+    color: #358856;
+    opacity: 0.8;
+}
+
+/* Categories Styles */
+.category-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 25px;
+}
+
+.plantCategory{
+    display: inline-block;
+    width: 160px;
+    height: auto;
+    background-color: #25523B;
+    text-align: center;
+    padding: 20px;
+    border: 0;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 10%;
+}
+
+.plantCategory p{
+    margin: 16px 0 0 0;
+    border: 0;
+    border-radius: 14px;
+    width: 100%;
+    height: 30px;
+    background-color: #29a058;
+    color: #25523B;
+    box-shadow: 2px 10px 10px 2px #1f4431;
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+
+/* Footer styles */
+footer{
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: #25523B;
+    color: #fff;
+}
+
+
+@media(max-width:900px){
+    .big-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 5px;
+    }
+    .category-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 25px;
+    }
+}
+@media(max-width:500px){
+    .big-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }
+    li{
+        list-style: none;
+        padding-right: 10px;
+        color: #fff;
+    }
+    .category-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px;
+        text-align: center;
+    }
+    .plantCategory{
+        margin: 12px;
+    }
+}

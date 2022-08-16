@@ -1,0 +1,22 @@
+<%- include('partials/header') -%>
+
+<div class="big-container">
+    <% items.forEach(item =>{ %>
+    <div class="card-container">
+        <div class="img-container">
+            <img src="<%=item.product[0].URLimg%>" alt="<%= item.product[0].name%>">
+        </div>
+        <div class="content">
+            <h3><%= item.product[0].name%></h3>
+            <p class="seller">Seller: <%= item.product[0].seller%></p>
+            <p class="price">$<%= item.product[0].price%></p>
+            <p class="stock"><%= item.product[0].stock%><span> In stock</span></p>
+            <a href="/category/<%= item.category %>"><p class="category"><%= item.category%></p></a>
+        </div>
+    </div>
+    <% }) %>
+</div>
+
+
+
+<%- include('partials/footer') -%>
