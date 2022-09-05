@@ -7,7 +7,7 @@
             <img src="<%=item.product[0].URLimg%>" alt="<%= item.product[0].name%>">
         </div>
         <div class="content">
-            <h3><%= item.product[0].name%></h3>
+            <h3><%= item.product[0].name.substring(0, 20) + '...' %></h3>
             <p class="seller">Seller: <%= item.product[0].seller%></p>
             <p class="price">$<%= item.product[0].price%></p>
             <p class="stock"><%= item.product[0].stock%><span> In stock</span></p>

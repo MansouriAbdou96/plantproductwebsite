@@ -86,7 +86,7 @@ h3{
 }
 
 .img-container img{
-    width: 315px;
+    width: 300px;
 }
 
 img{
@@ -102,6 +102,7 @@ img{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
+    margin: 10px 20px;
 }
 
 .card-container {

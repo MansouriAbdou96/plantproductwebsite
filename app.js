@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
 
 //mongoose for online server MongoDB
-mongoose.connect(process.env.MONGODB_SERVER);
+mongoose.connect("mongodb://localhost:27017/storeDB");
 
 const itemSchema = new mongoose.Schema({
     category: String,
@@ -102,4 +102,4 @@ app.post('/addProduct', (req, res) => {
 
 
 
-app.listen('5000', ()=> {console.log("The server is running in port 5000")});
+app.listen(process.env.PORT ||'5000', ()=> {console.log("The server is running in port 5000")});
