@@ -1,9 +1,44 @@
-# plantproductwebsite
-This website project is Nodejs based inspiring from Odin project.
+# Plant Product Website
 
-This is one of the project on Odin project using Nodejs and express, Mongodb, ejs...
+## Description
 
-You can add a plant product to the website and filter by categories.
+This website is built using Node.js, Express, MongoDB, and EJS. It allows users to add and view plant products, and filter them by categories. The project is inspired by the Odin Project.
 
+## Requirements
+
+* Node.js
+* Express
+* MongoDB
+* EJS
+
+## Usage
+
+1. Clone the repository to your local machine
+
+```sh
+git clone https://github.com/yourusername/plantproductwebsite.git
+```
+
+2. Install the necessary dependencies
+
+```sh
+npm install 
+```
+
+3. Start the Application
+
+```sh
+npm start 
+```
+
+4. Access the website in your browser at http://localhost:3000/
+
+## Contributing
+
+Feel free to submit pull requests and report any issues.
+
+## License
+
+This project is licensed under the MIT license.
 
 
