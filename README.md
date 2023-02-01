@@ -16,7 +16,7 @@ This website is built using Node.js, Express, MongoDB, and EJS. It allows users 
 1. Clone the repository to your local machine
 
 ```sh
-git clone https://github.com/yourusername/plantproductwebsite.git
+git clone https://github.com/MansouriAbdou96/plantproductwebsite.git
 ```
 
 2. Install the necessary dependencies
